@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-recipe-list></app-recipe-list>
+  </div>
+  <div class="col-md-7">
+    <!-- <app-recipe-detail *ngIf="selectedRecipe; else infoText" [recipe]="selectedRecipe"></app-recipe-detail> if selected recipe is undefined is going to be false and if false displays infoText -->
+    <!--<ng-template #infoText>
+      <p>Please Select a Recipe</p>
+    </ng-template> -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
